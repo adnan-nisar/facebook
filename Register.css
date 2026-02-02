@@ -1,0 +1,149 @@
+*{
+ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+   font-family: Helvetica;
+    background-color:#f0f2f5;
+}
+.img > img{
+    height: 100px;
+    display: flex;
+    padding-left: 39.5%;
+}
+.container{
+    padding-top: 15px;
+    border-radius: 10px;
+    margin-left: 34%;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 450px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.top>p{
+    color: gray;
+}
+hr{
+   margin-top: 12px;
+  
+}
+.inputs>input{
+
+    width: 200px;
+    margin: 10px ;       
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    border: 0.5px solid black;
+}
+.dob >p{
+    display: flex;
+    justify-content: start;
+    margin-left: 12px;
+    font-size: 12px;
+    color: gray;
+}
+.dateofbirth> select{
+    width: 125px;
+    padding: 10px;
+    height: 35px;
+    margin: 10px;
+    display: inline; 
+ justify-content: space-around;
+}
+.Genders>p{
+       display: flex;
+    justify-content: start;
+    margin-left: 12px;
+    font-size: 12px;
+    color: gray;
+}
+.Genders{
+
+}
+
+._58mt{
+border: 0.5px solid gray;
+display: inline-flex;
+
+width: 127px;
+  margin: 10px;
+  padding:6px;;
+
+
+
+  
+  
+}
+.gselect{
+display: flex;
+justify-content: center;}
+
+.email, .password{
+   
+    padding-left: 12px;
+    margin-bottom: 12px;
+    height: 40px;
+    width: 420px;
+    border-radius: 5px;
+    border: 0.2px solid gray;}
+
+    .para{
+        display: block;
+        padding: 2px;
+        margin: 11px 0px;
+        font-size: 12px;
+    }
+    .p1{
+        
+    }
+    .para a{
+        text-decoration: none;
+        color: blue;
+
+    }
+    .btnn > button{
+        background-color: #00a400;
+        margin: auto 180px;
+        width: 200px;
+        height: auto;
+        font-size: 17px;
+        border: none;
+        color: white;
+        border-radius:3px;
+     
+    }
+  .signupbtn{
+    background-color: #00a400;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 150px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  a{
+  
+    text-decoration: none;
+  }
+  .lp{
+    text-align: center;
+    padding-top: 20px;
+    color: #1877f2;
+    font-size: 17px;
+  }
+  .signupbtn:hover{
+    background-color: #00cd00;
+  }
+
+@media only screen and (max-width:700px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+}
