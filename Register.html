@@ -43,16 +43,20 @@
         <input type="password" placeholder="New Password" class="password">
     </div>
 <div class="para">
-        <p class="p1">
-        People who use our service may have uploaded your contact information to
-         Facebook. <a href="">Learn more.</a>
+    <p class="p1">
+        People who use our service may have uploaded your contact information to Facebook.
+        <a href="#" onclick="toggleText(event)">Learn more.</a>
     </p>
-    <br>
-    <p class="p2">
-By clicking Sign up, you agree to our <a href="">Terms, Privacy Policy and Cookies Policy.</a> You may receive SMS notifications from us and can opt out at any time.</p>
+
+    <p id="moreText" class="p2" style="display: none;">
+        By clicking Sign up, you agree to our 
+        <a href="">Terms, Privacy Policy and Cookies Policy.</a> 
+        You may receive SMS notifications from us and can opt out at any time.
+    </p>
 </div>
 <button class="signupbtn">Sign Up</button>
 <a href="./index.html"><p class="lp">Already have an account?</p></a>
    </div>
+   <script src="Register.js"></script>
 </body>
 </html>
