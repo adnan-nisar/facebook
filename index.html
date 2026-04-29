@@ -32,5 +32,17 @@
   
         </div>
     </div>
+    <script>
+        const loginBtn = document.querySelector('.loginbtn');
+        if (loginBtn) {
+            loginBtn.addEventListener('click', () => {
+                const email = document.querySelector('.rightbox .email').value.trim();
+                const password = document.querySelector('.rightbox .password').value.trim();
+                if (!email || !password) {
+                    alert('All fields are required');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
