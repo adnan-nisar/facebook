@@ -21,7 +21,12 @@
         <div class="rightbox">
         <input type="email" placeholder="Email or phone number" class="email">
         <br>
-        <input type="password" placeholder="Password" class="password">
+        <div class="password-wrap">
+          <input type="password" placeholder="Password" class="password" id="loginPasswordInput">
+          <button type="button" class="eye-btn" id="loginPasswordEye" aria-label="Toggle password visibility" aria-pressed="false">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+        </div>
         <br>
         <button class="loginbtn">Log In</button>
         <br>
@@ -32,17 +37,7 @@
   
         </div>
     </div>
-    <script>
-        const loginBtn = document.querySelector('.loginbtn');
-        if (loginBtn) {
-            loginBtn.addEventListener('click', () => {
-                const email = document.querySelector('.rightbox .email').value.trim();
-                const password = document.querySelector('.rightbox .password').value.trim();
-                if (!email || !password) {
-                    alert('All fields are required');
-                }
-            });
-        }
-    </script>
+   
+    <script src="login.js"></script>
 </body>
 </html>

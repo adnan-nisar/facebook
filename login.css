@@ -116,7 +116,7 @@ a{
     color: black;
     font-weight: 600;
 }
-.lastp{
+ .lastp{
     font-family: Helvetica;
     display: flex;
     text-align: center;
@@ -124,4 +124,23 @@ a{
     justify-content: center;
     margin-top: 20px;
     font-size: 13px;
+}
+
+.password-wrap{
+    position: relative;
+}
+
+.eye-btn{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #666;
+}
+
+.password-wrap .password{
+    padding-right: 50px;
 }
