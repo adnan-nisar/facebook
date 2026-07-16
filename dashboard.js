@@ -46,9 +46,9 @@
   function escapeHtml(str) {
     return String(str)
       .replaceAll('&', '&amp;')
-      .replaceAll('<', '<')
-      .replaceAll('>', '>')
-      .replaceAll('"', '"')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
       .replaceAll("'", '&#039;');
   }
 
@@ -133,10 +133,29 @@
     });
   }
 
+  function displayUserInfo(user) {
+    const sidebarProfileName = $('#sidebarProfileName');
+    const userEmail = $('#userEmail');
+    const userGender = $('#userGender');
+    const userDob = $('#userDob');
+    const postContent = $('#postContent');
+
+    if (sidebarProfileName) sidebarProfileName.textContent = user.fullName || 'User';
+    if (userEmail) userEmail.textContent = user.email || 'N/A';
+    if (userGender) userGender.textContent = user.gender || 'Not specified';
+    if (userDob) userDob.textContent = user.dob || 'Not specified';
+
+    if (postContent && user.fullName) {
+      const firstName = user.fullName.split(' ')[0];
+      postContent.placeholder = `What's on your mind, ${firstName}?`;
+    }
+  }
+
   // boot
   const user = requireLogin();
   if (!user) return;
 
+  displayUserInfo(user);
   initLogout();
   initPostComposer();
   renderPosts();

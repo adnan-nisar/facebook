@@ -79,6 +79,19 @@
     const email = document.querySelector('.passwords .email').value.trim();
     const password = document.querySelector('.passwords .password').value.trim();
 
+    const day = document.getElementById('day').value;
+    const month = document.getElementById('month').value;
+    const year = document.getElementById('year').value;
+    const dob = `${day}-${month}-${year}`;
+
+    const genderChecked = document.querySelector('input[name="sex"]:checked');
+    let gender = 'Not specified';
+    if (genderChecked) {
+      if (genderChecked.value === '1') gender = 'Female';
+      else if (genderChecked.value === '2') gender = 'Male';
+      else if (genderChecked.value === '-1') gender = 'Custom';
+    }
+
     const users = getUsers();
 
     const exists = users.some((u) => u.email?.toLowerCase() === email.toLowerCase());
@@ -92,6 +105,8 @@
       fullName: `${firstName} ${surname}`.trim(),
       email,
       password,
+      dob,
+      gender,
     };
 
     users.push(user);

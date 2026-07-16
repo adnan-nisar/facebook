@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facebook - Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -54,57 +54,49 @@
   <div class="container-fluid text-center mt-3">
     <div class="row">
 
-      <div class="col col-lg-3  leftSidebar">
-        <div class="d-flex gap-2 align-items-center">
+      <div class="col-lg-3 d-none d-lg-block leftSidebar">
+        <div class="d-flex gap-2 align-items-center mb-2">
           <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
+          <p id="sidebarProfileName" class="m-0 fw-bold">Loading...</p>
         </div>
-               <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
+        
+        <!-- About Me Section -->
+        <div class="card p-3 my-3 text-start shadow-sm border-0" style="background-color: #ffffff; border-radius: 8px; font-size: 14px;">
+          <h6 class="text-primary fw-bold mb-3"><i class="fa-solid fa-address-card me-2"></i>About Me</h6>
+          <div class="mb-2">
+            <span class="text-muted d-block" style="font-size: 11px; text-transform: uppercase; font-weight: 600;">Email Address</span>
+            <span id="userEmail" class="fw-semibold text-wrap text-break">loading...</span>
+          </div>
+          <div class="mb-2">
+            <span class="text-muted d-block" style="font-size: 11px; text-transform: uppercase; font-weight: 600;">Gender</span>
+            <span id="userGender" class="fw-semibold">loading...</span>
+          </div>
+          <div class="mb-0">
+            <span class="text-muted d-block" style="font-size: 11px; text-transform: uppercase; font-weight: 600;">Date of Birth</span>
+            <span id="userDob" class="fw-semibold">loading...</span>
+          </div>
         </div>
-            <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-        </div>
-             <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-        </div>
-            <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-        </div>
-               <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-        </div>
-              <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-        </div>
-              <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-        </div>
-            <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-        </div>
-             <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-        </div>
-              <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-        </div>
-             <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px">
-          <p></p>
-    
 
-      </div>
+        <div class="d-flex gap-2 align-items-center py-2">
+          <i class="fa-solid fa-user-group text-primary fs-5 ms-2"></i>
+          <p class="m-0 ms-2 fw-semibold">Friends</p>
+        </div>
+        <div class="d-flex gap-2 align-items-center py-2">
+          <i class="fa-solid fa-users text-primary fs-5 ms-2"></i>
+          <p class="m-0 ms-2 fw-semibold">Groups</p>
+        </div>
+        <div class="d-flex gap-2 align-items-center py-2">
+          <i class="fa-solid fa-store text-primary fs-5 ms-2"></i>
+          <p class="m-0 ms-2 fw-semibold">Marketplace</p>
+        </div>
+        <div class="d-flex gap-2 align-items-center py-2">
+          <i class="fa-solid fa-clock-rotate-left text-primary fs-5 ms-2"></i>
+          <p class="m-0 ms-2 fw-semibold">Memories</p>
+        </div>
+        <div class="d-flex gap-2 align-items-center py-2">
+          <i class="fa-solid fa-bookmark text-primary fs-5 ms-2"></i>
+          <p class="m-0 ms-2 fw-semibold">Saved</p>
+        </div>
  <hr>
 
         <p class="d-flex justify-content-start">Your Shortcuts
@@ -115,7 +107,7 @@
 
             </div>
 
-      <div class="col col-lg-6  feed">
+      <div class="col-12 col-lg-6 feed">
 
         <div class="topHeader d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center gap-2 img-modal">
@@ -222,7 +214,7 @@
         </div>
       </div>
 
-          <div class="col col-lg-3 chats">
+          <div class="col-lg-3 d-none d-lg-block chats">
 
         <div class="mb-2">
           <div class="d-flex justify-content-between align-items-center">
@@ -238,13 +230,13 @@
           </div>
 
         </div>
-        <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px" >
-          <p></p>
+        <div class="d-flex gap-2 align-items-center mb-2">
+          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="40px" style="border-radius:50%">
+          <p class="m-0 fw-semibold">Jane Smith</p>
         </div>
-        <div class="d-flex gap-2 align-items-center">
-          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="50px" >
-          <p></p>
+        <div class="d-flex gap-2 align-items-center mb-2">
+          <img src="./518349696_122110234658933174_4096433951976627231_n.jpg" alt="" height="40px" style="border-radius:50%">
+          <p class="m-0 fw-semibold">Alex Jones</p>
         </div>
 
         <hr>

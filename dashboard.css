@@ -23,6 +23,8 @@ body {
     background-color: #ffff;
     padding: 0 10px;
     position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .sec1 {
@@ -89,8 +91,10 @@ body {
 }
 
 .leftSidebar {
-    height: 90.5vh;
-    overflow: auto; 
+    position: sticky;
+    top: 65px;
+    height: calc(100vh - 65px);
+    overflow-y: auto; 
 } 
 
 .leftSidebar div, .chats div {
@@ -121,8 +125,10 @@ height: auto;
 } 
 
 .chats {
-height: 90.5vh;
-overflow: auto; 
+    position: sticky;
+    top: 65px;
+    height: calc(100vh - 65px);
+    overflow-y: auto; 
 }
 
 
